@@ -189,6 +189,68 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Gallery Section */}
+      <section id="gallery" className="py-20 px-6 bg-card/30">
+        <div className="container mx-auto">
+          <div className="max-w-6xl mx-auto">
+            <h3 className="text-4xl font-bold text-center text-foreground mb-8">Галерея наших вечеринок</h3>
+            <p className="text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+              Погрузитесь в атмосферу наших эксклюзивных мероприятий — элегантность, стиль и незабываемые впечатления
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="group relative overflow-hidden rounded-3xl aspect-square">
+                <img 
+                  src="/img/0b651922-5566-416a-a4a8-759682ef6cc0.jpg" 
+                  alt="Атмосфера элегантной вечеринки"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <h4 className="text-white text-xl font-semibold mb-2">Элегантная атмосфера</h4>
+                    <p className="text-white/80 text-sm">Изысканная обстановка наших мероприятий</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="group relative overflow-hidden rounded-3xl aspect-square">
+                <img 
+                  src="/img/5dbb790b-0d83-437c-b7bf-cd228d8bcbcb.jpg" 
+                  alt="Танцевальная зона клуба"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <h4 className="text-white text-xl font-semibold mb-2">Танцевальные вечера</h4>
+                    <p className="text-white/80 text-sm">Романтическая музыка и плавные движения</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative overflow-hidden rounded-3xl aspect-square">
+                <img 
+                  src="/img/8f0082ac-16ce-42ab-ac1d-4fcb75a5ed56.jpg" 
+                  alt="Lounge зона клуба"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <h4 className="text-white text-xl font-semibold mb-2">Lounge зоны</h4>
+                    <p className="text-white/80 text-sm">Комфортные пространства для общения</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-full px-8 py-3">
+                <Icon name="Images" className="mr-2" size={20} />
+                Смотреть все фото
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Membership Section */}
       <section id="membership" className="py-20 px-6 bg-card/30">
         <div className="container mx-auto">
